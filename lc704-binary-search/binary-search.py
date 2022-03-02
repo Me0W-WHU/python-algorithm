@@ -5,7 +5,7 @@ def search(nums: List[int], target: int) -> int:
     head = 0
     tail = len(nums)
     while head != tail:
-        p = int((head + tail) / 2)
+        p = head + (tail - head) // 2
         if nums[p] == target:
             return p
         elif nums[p] > target:
