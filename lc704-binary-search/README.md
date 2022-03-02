@@ -1,4 +1,4 @@
-Use a head and tail pointer to indicate current search area: 
-
-- The search stops when the length of the search area is 0. The expression of stop condition varies according to the definition of head and tail pointers.
-- The accessed element should be excluded from the next search area.
+- Use a head and tail pointer to indicate current search area.
+- Design the loop condition carefully according to your definition of head and tail pointer. The search should when the length of the search area is 0.
+    - Generally speaking, you should not allow the loop to stop when there's one element left. Because some cases won't hit this condition and it often requires unnecessary extra checks
+- You **must not** move the head pointer to an accessed element by any circumstances, as this may cause that element to be accessed over and over again and lead to an endless loop. It's fine to move the tail pointer to the accessed element though.
