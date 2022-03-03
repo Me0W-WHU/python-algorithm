@@ -1,3 +1,5 @@
+https://leetcode-cn.com/problems/binary-search/
+
 - Use a head and tail pointer to indicate current search area.
 - Design the loop condition carefully according to your definition of head and tail pointer. The search should end when the length of the search area is 0.
     - Generally speaking, you should not allow the loop to stop when there's one element left. Because some cases won't hit this condition and it often requires unnecessary extra checks
